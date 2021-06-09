@@ -7,14 +7,16 @@
     font-family: 'Roboto', sans-serif;
     color:#251d20;
 }
-
+html {
+    scroll-snap-type: y mandatory;
+}
 body {
-    background-color: #ADD8E6;
-    background-color: lightblue;
+    background-color: #00c1b5;
+    scroll-snap-type: y mandatory;
 }
 
 .fixed-ctr {
-    margin: 2%;
+    margin: 1%;
 }
 header, footer {
     position:fixed;
@@ -36,7 +38,7 @@ p {
     width: 25%;
 }
 .logo img {
-    width:100%;
+    width:85%;
 }
 .email {
     width: 30%;
@@ -57,7 +59,15 @@ footer {
     font-weight: 400;
     font-size: 12px;
 }
-
+.info .pp {
+    display: block;
+    margin-top: 30px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .menu ul {
     list-style: none;
 }
@@ -66,7 +76,12 @@ footer {
     font-weight: 400;
     line-height: 29px;
 }
-
+.menu a {
+    text-decoration: none;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
 .container {
     /*width: 100%;
     display: flex;
@@ -75,22 +90,29 @@ footer {
     
     
   }
-  
-  .extra {
-    display: grid;
-    place-items: center;
-    background-color: white;
-    height: 50vh;
-  }
-  
-  
+   
   .panel {
     height:100vh;
     /*position: relative;
     color: black;*/
     display: grid;
     place-items: center;
+    scroll-snap-align: start;
   }
   .panel img {
-      width: 39%;
+      width: 30%;
   }
+  .panel .cta {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+
+  .panel a {
+      color: white;
+      text-decoration: none;
+      
+  }
+  .panel a:hover {
+    text-decoration: underline;
+}
