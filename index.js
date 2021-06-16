@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+/*gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -21,11 +21,12 @@ const t2 = gsap.timeline({
 t2.to("body", {
     background: rgb(255,101,26),
     duration:1
-});
+});*/
 
 
 function isInView(el) {
     const box = el.getBoundingClientRect();
+    console.log(box.top);
     return box.top < window.innerHeight && box.bottom >= 0;
 };
 
@@ -34,12 +35,39 @@ function bgChange(bg) {
 };
 
 // On scroll check if each page is in view, then fire background change
-if (isInView('.issue-1') = true) {
+function myFunction() {
+    let bg;
+    let element1 = document.getElementById('issue-1');
+    let element2 = document.getElementById('issue-2');
+    let element3 = document.getElementById('issue-3');
+    let element4 = document.getElementById('issue-4');
+    //let element5 = document.getElementById('issue-5');
+    if (isInView(element1) == true) {
+        //bold font for issue#1 on menu
+        
+        bg = '#e30512';
+    } else if (isInView(element2) == true) {
+        //bg = 'blue';
+        //bgChange(bg);
+        bg = '#1d3fbb';
+    }
+    else if (isInView(element3) == true) {
+        //bg = 'blue';
+        //bgChange(bg);
+        bg = '#ffbe00';
+    }
+    else if (isInView(element4) == true) {
+        //bg = 'blue';
+        //bgChange(bg);
+        bg = '#ff651a';
+    }
+    else {
+        bg = '#00c1b5';
+    }
+    bgChange(bg);
+};
 
-}
-
-
-
+document.addEventListener("scroll", myFunction);
 // Setting the initial background color
 //gsap.set(container, {
 //  backgroundColor: 'lightblue',
