@@ -21,7 +21,7 @@ html::-webkit-scrollbar {
 body {
     background-color: #00c1b5;
     scroll-snap-type: y mandatory;
-    transition: background-color 1.5;
+    /*transition: background-color .5 ease-in-out;*/
 }
 
 
