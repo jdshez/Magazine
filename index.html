@@ -20,7 +20,7 @@
             <p>info@backstagetalks.com</p>
         </div>
     </header>
-    <footer>
+    
         <div class="info">
             <p class="blurb">Backstage Talks is a magazine of casual, but in depth dialogues on design and business. Our decisions shape and influence this complex world—to have a chance to make the right ones, we need to talk.</p>
             <span>© 2021 Published by studio Milk</span><br>
@@ -28,21 +28,23 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="#issue-5">Issue #5</a></li>
-                <li><a href="#issue-4">Issue #4</a></li>
-                <li><a href="#issue-3">Issue #3</a></li>
-                <li><a href="#issue-2">Issue #2</a></li>
-                <li><a href="#issue-1">Issue #1</a></li>
+                <li><a class="active" id="i5" href="#issue-5">Issue #5</a></li>
+                <li><a id="i4" href="#issue-4">Issue #4</a></li>
+                <li><a id="i3" href="#issue-3">Issue #3</a></li>
+                <li><a id="i2" href="#issue-2">Issue #2</a></li>
+                <li><a id="i1" href="#issue-1">Issue #1</a></li>
             </ul>
         </div>
-    </footer>
+    
     
     <div class="container" onscroll='changeBg'>
         <section class="panel issue-5" id='issue-5'>
             <img src="/images/backstagetalks_cover_issue_5.png" alt="" class="cover">
-            <p>Issue #5</p>
-            <p class="cta"><a href="#">BUY HERE</a></p>
-            <span class="cta">or in <a href="#">selected stores.</a></span>
+            <div class="copy">
+                <p>Issue #5</p>
+                <p class="cta"><a href="#">BUY HERE</a></p>
+                <span class="cta">or in <a href="#">selected stores.</a></span>
+            </div>
         </section>
         <section class="panel issue-4" id='issue-4' >
             <img src="/images/backstagetalks_cover_issue_4.png" alt="" class="cover">
@@ -50,22 +52,24 @@
             <p class="cta"><a href="#">BUY HERE</a></p>
             <span class="cta">or in <a href="#">selected stores.</a></span>
         </section>
-        <section class="panel" id='issue-3'>
+        <section class="panel issue-3" id='issue-3'>
             <img src="/images/backstagetalks_cover_issue_3.png" alt="" class="cover">
             <p>Issue #3</p>
             <p class="cta"><a href="#">BUY HERE</a></p>
             <span class="cta">or in <a href="#">selected stores.</a></span>
         </section>
-        <section class="panel" id='issue-2'>
+        <section class="panel issue-2" id='issue-2'>
             <img src="/images/backstagetalks_cover2017.png" alt="" class="cover">
             <p>Issue #2</p>
             <p class="cta"><a href="#">BUY HERE</a></p>
             <span class="cta">or in <a href="#">selected stores.</a></span>
         </section>
-        <section class="panel" >
+        <section class="panel issue-1" >
             <img id='issue-1' src="/images/backstagetalks_cover2016_n.png" alt="" class="cover">
-            <p>Issue #1 is sold out</p>
-            <span class="cta">If you are lucky, you may get the last copies in selected stores. </span>
+            <div class="copy">
+                <p>Issue #1 is sold out</p>
+                <span class="cta">If you are lucky, you may get the last copies in <a href="#">selected stores.</a></span>
+            </div>
         </section>
     </div>
     
